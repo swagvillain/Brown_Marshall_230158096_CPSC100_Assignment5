@@ -25,14 +25,17 @@ public class Brown_Marshall_Q1a {
 
         while(sc.hasNext()){
             entire.add(sc.nextLine());
-
         }
+        sc.close();
 
         for(int i = 0; i < entire.size(); i++)
             System.out.println(entire.get(i));
 
-        for(int i = 0; i <entire.size(); i++){
+        for(int i = 0; i < entire.size(); i++){
+            entire.get(i).split("  ");
+        }
 
+        for(int i = 0; i <entire.size(); i++){
         }
 
 //edit
