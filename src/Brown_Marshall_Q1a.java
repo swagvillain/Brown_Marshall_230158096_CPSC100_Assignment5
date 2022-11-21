@@ -1,10 +1,11 @@
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.Scanner;
 import java.util.ArrayList;
 
 public class Brown_Marshall_Q1a {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FileNotFoundException {
         ArrayList<String> boys = new ArrayList<String>();
         ArrayList<String> girls = new ArrayList<String>();
         ArrayList<String> entire = new ArrayList<String>();
@@ -20,15 +21,18 @@ public class Brown_Marshall_Q1a {
         File girlFile = new File("/home/brownm6/Desktop/Marshall");
         File inFile = new File("/home/brownm6/Desktop/Marshall/CPSC100 Assignments/Brown_Marshall_230158096_CPSC100_Assignment5/babynames.txt");
 
-        Scanner sc = new Scanner("inFile");
-
-//        while(sc.hasNext()){
-//            entire.add(sc.nextLine());
+        Scanner sc = new Scanner(inFile);
 
         while(sc.hasNext()){
-            for(int i = 0; i < 3; i++){
-                System.out.println(sc.next());
-            }
+            entire.add(sc.nextLine());
+
+        }
+
+        for(int i = 0; i < entire.size(); i++)
+            System.out.println(entire.get(i));
+
+        for(int i = 0; i <entire.size(); i++){
+
         }
 
 //edit
