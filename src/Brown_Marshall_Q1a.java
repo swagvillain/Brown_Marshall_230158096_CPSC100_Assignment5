@@ -8,7 +8,11 @@ public class Brown_Marshall_Q1a {
     public static void main(String[] args) throws FileNotFoundException {
         ArrayList<String> boys = new ArrayList<String>();
         ArrayList<String> girls = new ArrayList<String>();
-        ArrayList<String> entire = new ArrayList<String>();
+        ArrayList<String[]> entire = new ArrayList<String[]>();
+        File boyFile = new File("/home/brownm6/Desktop/Marshall");
+        File girlFile = new File("/home/brownm6/Desktop/Marshall");
+        File inFile = new File("/home/brownm6/Desktop/Marshall/CPSC100 Assignments/Brown_Marshall_230158096_CPSC100_Assignment5/babynames.txt");
+        //String[] cars;
 
         //getting the input file from the user
 //        Scanner kb = new Scanner(System.in);
@@ -17,29 +21,18 @@ public class Brown_Marshall_Q1a {
 //        path = kb.nextLine();
 //        File inFile = new File(path);
 
-        File boyFile = new File("/home/brownm6/Desktop/Marshall");
-        File girlFile = new File("/home/brownm6/Desktop/Marshall");
-        File inFile = new File("/home/brownm6/Desktop/Marshall/CPSC100 Assignments/Brown_Marshall_230158096_CPSC100_Assignment5/babynames.txt");
-
         Scanner sc = new Scanner(inFile);
 
         while(sc.hasNext()){
-            entire.add(sc.nextLine());
+            entire.add(sc.nextLine().split("  "));
         }
         sc.close();
 
+
+
         for(int i = 0; i < entire.size(); i++)
-            System.out.println(entire.get(i));
-
-        for(int i = 0; i < entire.size(); i++){
-            entire.get(i).split("  ");
-        }
-
-        for(int i = 0; i <entire.size(); i++){
-        }
-
-//edit
-
+            for(int j = 1; i <4; i++)
+                boys.add(entire.toString(i));
 
     }
 }
