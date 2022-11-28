@@ -29,10 +29,10 @@ public class Brown_Marshall_Q1a {
         sc.close();
 
 
-
-        for(int i = 0; i < entire.size(); i++)
-            for(int j = 1; i <4; i++)
-                boys.add(entire.toString(i));
+//arraylist.contain()
+//        for(int i = 0; i < entire.size(); i++)
+//            for(int j = 1; i <4; i++)
+//                boys.add(entire.toString(i));
 
     }
 }
